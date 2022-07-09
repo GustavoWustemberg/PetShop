@@ -23,10 +23,10 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 259;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue) 91% 9%);
+  --base-color-second: hsl(var(--hue) 80% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
@@ -77,20 +77,16 @@ body {
 
 .divider-1 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(var(--hue), 36%, 57%, 1),
-    hsla(var(--hue), 65%, 88%, 0.34)
-  );
+  background: linear-gradient(270deg,
+      hsla(var(--hue), 36%, 57%, 1),
+      hsla(var(--hue), 65%, 88%, 0.34));
 }
 
 .divider-2 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue), 36%, 57%, 1)
-  );
+  background: linear-gradient(270deg,
+      hsla(var(--hue), 65%, 88%, 0.34),
+      hsla(var(--hue), 36%, 57%, 1));
 }
 
 /*====  LAYOUT ============================ */
@@ -143,16 +139,12 @@ body {
 
 /*====  LOGO ============================ */
 .logo {
-  font: 700 1.31rem var(--title-font);
-  color: var(--title-color);
+  padding-top: 5px;
 }
 
-.logo span {
-  color: var(--base-color);
-}
-
-.logo-alt span {
-  color: var(--body-color);
+.logo img {
+  border-radius: 15px;
+  width: 30%;
 }
 
 /*====  NAVIGATION ============================ */
@@ -368,72 +360,6 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/*====  TESTIMONIALS ============================ */
-#testimonials {
-  background: white;
-}
-
-#testimonials .container {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#testimonials header {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: 0;
-}
-
-#testimonials blockquote {
-  padding: 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 0.25rem;
-}
-
-#testimonials blockquote p {
-  position: relative;
-  text-indent: 1.875rem;
-  margin-bottom: 1.5rem;
-  color: var(--title-color);
-}
-
-#testimonials blockquote p span {
-  font: 700 2.5rem serif;
-  position: absolute;
-  top: -0.375rem;
-  left: -1.875rem;
-  color: var(--base-color);
-}
-
-#testimonials cite {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-}
-
-#testimonials cite img {
-  width: 2rem;
-  height: 2rem;
-  object-fit: cover;
-  clip-path: circle();
-  margin-right: 0.5rem;
-}
-
-/* swiper */
-.swiper-slide {
-  height: auto;
-  padding: 4rem 1rem;
-}
-
-.swiper-pagination-bullet {
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--base-color);
-}
-
 /*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
@@ -443,10 +369,18 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
+#contact a {
+  color: var(--text-color);
+}
+
 #contact .button i,
 #contact ul li i {
   font-size: 1.5rem;
   margin-right: 0.625rem;
+}
+
+#contact .button {
+  color: var(--text-color-light);
 }
 
 #contact ul.grid {
@@ -474,6 +408,10 @@ footer.section {
 footer .logo {
   display: inline-block;
   margin-bottom: 1.5rem;
+}
+
+footer .logo img {
+  width: 50%;
 }
 
 footer .brand p {
@@ -531,6 +469,7 @@ footer .social a:hover {
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
+
   /* reusable classes */
   .container {
     max-width: 1120px;
@@ -649,6 +588,7 @@ footer .social a:hover {
     font-size: 2.25rem;
   }
 }
+
 /* large devices: 1023 > */
 /* large devices: 992 > */
 @media (min-width: 992px) {
@@ -657,4 +597,5 @@ footer .social a:hover {
     --subtitle-font-size: 1.125rem;
   }
 }
+
 /* medium devices: 767 > */
