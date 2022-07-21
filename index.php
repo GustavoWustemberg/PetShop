@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt_BR">
+<?php
+$title = 'Home';
 
+?>
 <?php include('./components/head.php') ?>
 <?php include('geral.php') ?>
 

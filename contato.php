@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt_BR">
-
-<?php include('./components/head.php') ?>
-<?php include('geral.php') ?>
+<?php
+$title = 'Contato';
+include('./components/head.php');
+include('geral.php');
+?>
 
 <body>
 

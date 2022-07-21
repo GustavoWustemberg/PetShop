@@ -1,10 +1,12 @@
-<?php include('geral.php') ?>
+<!DOCTYPE html>
+<html lang="pt_BR">
 
 <head>
+  <?php include('geral.php') ?>
   <!-- PAGE INFO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><?= $nomeSite ?></title>
+  <title><?= $title . " - " . $nomeSite ?></title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/images/icon-pet.ico" type="image/x-icon">

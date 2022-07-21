@@ -5,7 +5,7 @@
     <div class="menu">
       <ul class="grid">
         <li><a class="title" href="index.php">Início</a></li>
-        <li><a class="title" href="sobre.php">Sobre</a></li>
+        <li><a class="title" href="sobre.php">Sobre Nós</a></li>
         <li><a class="title" href="servicos.php">Serviços</a></li>
         <li><a class="title" href="contato.php">Contato</a></li>
       </ul>

@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt_BR">
-
-<?php include('./components/head.php') ?>
+<?php
+$title = 'Sobre Nós';
+include('./components/head.php');
+include('geral.php');
+?>
 
 <body>
 
